@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gilpereirapt.github.io/Collexall-Site/sitemap.xml
