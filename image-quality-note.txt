@@ -1,0 +1,1 @@
+Hero and Discogs screenshot are stored as high-quality WebP assets for the public landing page.
