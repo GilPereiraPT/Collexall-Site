@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 1320" role="img" aria-labelledby="title desc">
+  <title id="title">Collexall Discogs integration screen</title>
+  <desc id="desc">Vector reconstruction of the Collexall Discogs screen with connection status, sync button, API quota, collection value, folders and Wantlist.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5cb7a"/><stop offset="1" stop-color="#d7a14e"/></linearGradient>
+  </defs>
+  <rect width="680" height="1320" rx="42" fill="#071019"/>
+  <g font-family="Inter,system-ui,sans-serif" fill="#f1ece5">
+    <text x="30" y="72" font-size="38">Discogs</text>
+    <text x="614" y="72" font-size="38" fill="#d9d1c5">↻</text>
+  </g>
+
+  <g transform="translate(20 110)">
+    <rect width="640" height="236" rx="30" fill="#0f1a25" stroke="#293b4b" stroke-width="2"/>
+    <rect x="30" y="28" width="72" height="72" rx="20" fill="#2a2924"/>
+    <path d="M49 66c3-13 15-22 28-19 7 1 13 6 16 12 10-1 18 6 18 16 0 9-7 16-16 16H57c-12 0-20-10-18-21 1-2 4-3 10-4Z" fill="none" stroke="#e4ad57" stroke-width="4" stroke-linecap="round"/>
+    <path d="m65 73 8 8 17-18" fill="none" stroke="#e4ad57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="124" y="62" font-size="38" fill="#f4eee7" font-family="Inter,system-ui,sans-serif">Discogs connection</text>
+    <text x="124" y="96" font-size="24" fill="#d5d0c8" font-family="Inter,system-ui,sans-serif">Connected as collexall</text>
+    <text x="38" y="170" font-size="27" fill="#f1ece5" font-family="Inter,system-ui,sans-serif">♢</text>
+    <text x="72" y="171" font-size="24" fill="#e5dfd7" font-family="Inter,system-ui,sans-serif">Secure Discogs token</text>
+    <text x="466" y="171" font-size="24" font-weight="700" fill="#f0b85d" font-family="Inter,system-ui,sans-serif">Disconnect</text>
+  </g>
+
+  <g transform="translate(20 370)">
+    <rect width="640" height="350" rx="30" fill="#0f1a25" stroke="#293b4b" stroke-width="2"/>
+    <text x="32" y="60" font-size="35" fill="#f5f1eb" font-family="Inter,system-ui,sans-serif">↻</text>
+    <text x="82" y="60" font-size="29" font-weight="700" fill="#f5f1eb" font-family="Inter,system-ui,sans-serif">Sync both ways</text>
+    <text x="28" y="112" font-size="23" fill="#e3ddd6" font-family="Inter,system-ui,sans-serif">Pulls your Discogs collection and wantlist, then adds</text>
+    <text x="28" y="143" font-size="23" fill="#e3ddd6" font-family="Inter,system-ui,sans-serif">eligible local items that are not yet in Discogs. Remote</text>
+    <text x="28" y="174" font-size="23" fill="#e3ddd6" font-family="Inter,system-ui,sans-serif">deletions always require confirmation.</text>
+    <rect x="28" y="205" width="295" height="85" rx="28" fill="url(#gold)"/>
+    <text x="60" y="258" font-size="28" fill="#382710" font-family="Inter,system-ui,sans-serif">↻</text>
+    <text x="98" y="258" font-size="26" font-weight="700" fill="#382710" font-family="Inter,system-ui,sans-serif">Sync both ways</text>
+    <text x="28" y="326" font-size="23" fill="#e8e1d8" font-family="Inter,system-ui,sans-serif">API requests remaining: 40/60</text>
+  </g>
+
+  <g transform="translate(20 746)">
+    <rect width="640" height="248" rx="30" fill="#0f1a25" stroke="#293b4b" stroke-width="2"/>
+    <text x="28" y="60" font-size="34" fill="#f5f1eb" font-family="Inter,system-ui,sans-serif">€</text>
+    <text x="76" y="60" font-size="29" font-weight="700" fill="#f5f1eb" font-family="Inter,system-ui,sans-serif">Discogs collection value</text>
+    <g transform="translate(28 96)">
+      <rect width="184" height="125" rx="22" fill="#101925" stroke="#584b37" stroke-width="2"/>
+      <rect x="198" width="184" height="125" rx="22" fill="#101925" stroke="#584b37" stroke-width="2"/>
+      <rect x="396" width="184" height="125" rx="22" fill="#101925" stroke="#584b37" stroke-width="2"/>
+      <text x="92" y="58" text-anchor="middle" font-size="31" font-weight="700" fill="#f0eae3" font-family="Inter,system-ui,sans-serif">€30.58</text>
+      <text x="290" y="58" text-anchor="middle" font-size="31" font-weight="700" fill="#f0eae3" font-family="Inter,system-ui,sans-serif">€52.58</text>
+      <text x="488" y="58" text-anchor="middle" font-size="31" font-weight="700" fill="#f0eae3" font-family="Inter,system-ui,sans-serif">€121.88</text>
+      <text x="92" y="96" text-anchor="middle" font-size="22" fill="#d9d2ca" font-family="Inter,system-ui,sans-serif">Minimum</text>
+      <text x="290" y="96" text-anchor="middle" font-size="22" fill="#d9d2ca" font-family="Inter,system-ui,sans-serif">Median</text>
+      <text x="488" y="96" text-anchor="middle" font-size="22" fill="#d9d2ca" font-family="Inter,system-ui,sans-serif">Maximum</text>
+    </g>
+  </g>
+
+  <g transform="translate(20 1018)">
+    <rect width="640" height="122" rx="28" fill="#0f1a25" stroke="#293b4b" stroke-width="2"/>
+    <text x="30" y="62" font-size="36" fill="#d8d0c4" font-family="Inter,system-ui,sans-serif">▱</text>
+    <text x="92" y="54" font-size="30" fill="#eee8e0" font-family="Inter,system-ui,sans-serif">Collection folders</text>
+    <text x="92" y="88" font-size="23" fill="#d8d1c9" font-family="Inter,system-ui,sans-serif">2</text>
+    <text x="576" y="68" font-size="35" fill="#d8d0c4" font-family="Inter,system-ui,sans-serif">⌄</text>
+  </g>
+
+  <text x="22" y="1207" font-size="37" fill="#f1ece5" font-family="Inter,system-ui,sans-serif">Wantlist</text>
+  <text x="612" y="1207" font-size="38" fill="#d9d1c5" font-family="Inter,system-ui,sans-serif">↻</text>
+  <rect y="1250" width="680" height="70" fill="#1e1a13"/>
+  <g font-family="Inter,system-ui,sans-serif" font-size="22" fill="#e8e1d8">
+    <text x="72" y="1293" text-anchor="middle">⌂</text><text x="210" y="1293" text-anchor="middle">▣</text><text x="340" y="1293" text-anchor="middle" fill="#f2c36e">⇄</text><text x="470" y="1293" text-anchor="middle">♧</text><text x="608" y="1293" text-anchor="middle">⚙</text>
+  </g>
+</svg>
