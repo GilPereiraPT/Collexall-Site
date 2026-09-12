@@ -1,0 +1,14 @@
+{
+  "languages": [
+    {"code":"pt","flag":"🇵🇹","name":"Português","text":"A aplicação está integralmente disponível em Português."},
+    {"code":"en","flag":"🇬🇧","name":"English","text":"The app is fully available in English."},
+    {"code":"es","flag":"🇪🇸","name":"Español","text":"La aplicación está disponible íntegramente en español."},
+    {"code":"fr","flag":"🇫🇷","name":"Français","text":"L’application est entièrement disponible en français."},
+    {"code":"de","flag":"🇩🇪","name":"Deutsch","text":"Die App ist vollständig auf Deutsch verfügbar."},
+    {"code":"it","flag":"🇮🇹","name":"Italiano","text":"L’app è interamente disponibile in italiano."},
+    {"code":"nl","flag":"🇳🇱","name":"Nederlands","text":"De app is volledig beschikbaar in het Nederlands."},
+    {"code":"pl","flag":"🇵🇱","name":"Polski","text":"Aplikacja jest w pełni dostępna w języku polskim."},
+    {"code":"sv","flag":"🇸🇪","name":"Svenska","text":"Appen är helt tillgänglig på svenska."},
+    {"code":"cs","flag":"🇨🇿","name":"Čeština","text":"Aplikace je kompletně dostupná v češtině."}
+  ]
+}
