@@ -1,17 +1,31 @@
 # Collexall — Music Edition website
 
-Official public website for **Collexall — Music Edition**, an Android application for cataloguing physical music collections.
+Official public website for **Collexall — Music Edition**, an Android application for cataloguing and managing physical music collections.
+
+## Current app version
+
+**Collexall — Music Edition v1.2.1 (build 24)**
 
 The site is static and designed for GitHub Pages.
 
 ## Product highlights
 
 - CD, vinyl / LP, music DVD and music Blu-ray cataloguing
-- Barcode scanning and manual Discogs search
-- Discogs collection and Wantlist integration
-- Collection statistics and filters
+- Barcode scanning with shutter-controlled offline batch capture
+- Smart Cover Scan with on-device text recognition and Discogs search
+- Manual Discogs search for releases that are difficult to identify
+- Bidirectional Discogs collection synchronisation
+- Discogs Wishlist refresh, folders and per-copy instance tracking
+- Discogs minimum, median and maximum collection values
+- Collection statistics, search and filters
 - Physical locations and loans
+- Ratings, favourites and Wishlist management
+- For Sale workflow with asking price, media/cover condition and sale notes
+- Sold history with final price and sale date
+- Publish-ready responsive HTML catalogue export for available items
 - CSV export / edit / import workflow
+- JSON backup and restore
+- 10 localized languages
 - Privacy Policy and Terms of Use
 
 ## Publishing
