@@ -1,3 +1,8 @@
+const languageStyles = document.createElement('link');
+languageStyles.rel = 'stylesheet';
+languageStyles.href = 'languages.css';
+document.head.appendChild(languageStyles);
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const observer = new IntersectionObserver((entries) => {
@@ -6,4 +11,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.08 });
 
-document.querySelectorAll('.feature-card, .split-section, .collector-panel, .privacy-callout').forEach((el) => observer.observe(el));
+document.querySelectorAll('.feature-card, .split-section, .collector-panel, .privacy-callout, .language-card').forEach((el) => observer.observe(el));
