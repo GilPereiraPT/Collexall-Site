@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Collexall Music Edition</title>
+  <desc id="desc">Premium dark and gold illustration with vinyl records, CDs, music Blu-rays and a phone scanning a barcode.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071019"/><stop offset="1" stop-color="#11100c"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7d48f"/><stop offset=".55" stop-color="#d9a34f"/><stop offset="1" stop-color="#8b5c23"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#263746" stop-opacity=".9"/><stop offset="1" stop-color="#0b1117" stop-opacity=".96"/></linearGradient>
+    <radialGradient id="vinyl" cx="45%" cy="40%"><stop stop-color="#343434"/><stop offset=".4" stop-color="#141414"/><stop offset="1" stop-color="#050505"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000" flood-opacity=".48"/></filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="900" height="1200" rx="40" fill="url(#bg)"/>
+  <ellipse cx="690" cy="130" rx="180" ry="150" fill="#d9a34f" opacity=".10" filter="url(#glow)"/>
+  <ellipse cx="160" cy="820" rx="190" ry="240" fill="#d9a34f" opacity=".08" filter="url(#glow)"/>
+
+  <!-- logo -->
+  <g transform="translate(360 70)">
+    <circle cx="90" cy="90" r="72" fill="none" stroke="url(#gold)" stroke-width="8"/>
+    <circle cx="90" cy="90" r="18" fill="url(#gold)"/>
+    <circle cx="90" cy="90" r="5" fill="#101010"/>
+    <path d="M42 77c8-27 24-43 50-52M36 94c8-33 27-53 58-64M138 103c-8 27-24 43-50 52M144 86c-8 33-27 53-58 64" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="450" y="290" text-anchor="middle" fill="#f3eee6" font-size="68" font-weight="760" font-family="Inter,system-ui,sans-serif" letter-spacing="1">Collexall</text>
+  <text x="450" y="340" text-anchor="middle" fill="#e7b868" font-size="29" font-family="Inter,system-ui,sans-serif" letter-spacing="8">MUSIC EDITION</text>
+  <line x1="390" y1="380" x2="510" y2="380" stroke="#d9a34f" stroke-width="3"/>
+  <text x="450" y="425" text-anchor="middle" fill="#dce0e3" font-size="23" font-family="Inter,system-ui,sans-serif">Catalog your physical music collection.</text>
+
+  <!-- album sleeve -->
+  <g filter="url(#shadow)" transform="translate(92 500)">
+    <rect width="360" height="360" rx="8" fill="#0b0b0c" stroke="#765d3d" stroke-width="2"/>
+    <circle cx="180" cy="180" r="74" fill="url(#gold)" opacity=".88"/>
+    <path d="M0 260 C80 210 140 280 205 242 C272 204 312 245 360 218 L360 360 L0 360Z" fill="#121d25"/>
+    <text x="180" y="66" text-anchor="middle" fill="#d9a34f" font-size="18" letter-spacing="7" font-family="Inter,system-ui,sans-serif">MIDNIGHT</text>
+    <text x="180" y="92" text-anchor="middle" fill="#d9a34f" font-size="18" letter-spacing="7" font-family="Inter,system-ui,sans-serif">HORIZONS</text>
+  </g>
+
+  <!-- vinyl -->
+  <g filter="url(#shadow)">
+    <circle cx="515" cy="680" r="176" fill="url(#vinyl)" stroke="#51402e" stroke-width="3"/>
+    <circle cx="515" cy="680" r="147" fill="none" stroke="#2f2f2f" stroke-width="2"/>
+    <circle cx="515" cy="680" r="119" fill="none" stroke="#292929" stroke-width="2"/>
+    <circle cx="515" cy="680" r="70" fill="url(#gold)"/>
+    <circle cx="515" cy="680" r="7" fill="#101010"/>
+    <text x="515" y="665" text-anchor="middle" fill="#2b2113" font-size="12" letter-spacing="3" font-family="Inter,system-ui,sans-serif">SOUNDS</text>
+    <text x="515" y="684" text-anchor="middle" fill="#2b2113" font-size="12" letter-spacing="3" font-family="Inter,system-ui,sans-serif">LIVE ON</text>
+  </g>
+
+  <!-- discs stack -->
+  <g transform="translate(85 865)" filter="url(#shadow)">
+    <g fill="url(#glass)" stroke="#81909c" stroke-opacity=".65">
+      <rect y="0" width="345" height="42" rx="4"/><rect y="46" width="345" height="42" rx="4"/><rect y="92" width="345" height="42" rx="4"/><rect y="138" width="345" height="42" rx="4"/>
+    </g>
+    <g fill="#efe9df" font-size="12" letter-spacing="3" font-family="Inter,system-ui,sans-serif">
+      <text x="28" y="26">NORTHERN SKIES</text><text x="28" y="72">A QUIETER PLACE</text><text x="28" y="118">BRIGHTER DAYS</text><text x="28" y="164">THE LONG WAY</text>
+    </g>
+  </g>
+
+  <!-- blu-rays -->
+  <g transform="translate(655 520)" filter="url(#shadow)">
+    <rect width="150" height="340" rx="12" fill="#0c1117" stroke="#315d9e" stroke-width="5"/>
+    <rect x="8" y="11" width="134" height="38" rx="5" fill="#18365f"/>
+    <text x="75" y="36" text-anchor="middle" fill="#d9e7f9" font-size="13" font-family="Inter,system-ui,sans-serif">BLU-RAY</text>
+    <text x="75" y="112" text-anchor="middle" fill="#f4efe6" font-size="17" letter-spacing="4" font-family="Inter,system-ui,sans-serif">LIVE</text>
+    <text x="75" y="139" text-anchor="middle" fill="#f4efe6" font-size="17" letter-spacing="4" font-family="Inter,system-ui,sans-serif">IN LIGHT</text>
+    <path d="M10 254 Q75 180 140 254 V332 H10Z" fill="#172838"/>
+    <g fill="#d9a34f" opacity=".9"><circle cx="34" cy="270" r="4"/><circle cx="59" cy="246" r="4"/><circle cx="83" cy="266" r="4"/><circle cx="110" cy="238" r="4"/></g>
+  </g>
+
+  <!-- phone -->
+  <g transform="translate(445 790) rotate(-4 150 260)" filter="url(#shadow)">
+    <rect width="300" height="530" rx="48" fill="#080b0f" stroke="#5d646a" stroke-width="4"/>
+    <rect x="18" y="18" width="264" height="494" rx="34" fill="#0b141d"/>
+    <rect x="112" y="8" width="76" height="12" rx="7" fill="#1f252a"/>
+    <circle cx="150" cy="92" r="30" fill="none" stroke="#d9a34f" stroke-width="4"/>
+    <circle cx="150" cy="92" r="8" fill="#d9a34f"/>
+    <text x="150" y="145" text-anchor="middle" fill="#f2ede5" font-size="30" font-weight="700" font-family="Inter,system-ui,sans-serif">Collexall</text>
+    <text x="150" y="170" text-anchor="middle" fill="#d9a34f" font-size="13" letter-spacing="2" font-family="Inter,system-ui,sans-serif">MUSIC EDITION</text>
+    <g transform="translate(56 225)">
+      <path d="M0 28V0h28M160 0h28v28M188 112v28h-28M28 140H0v-28" fill="none" stroke="#d9a34f" stroke-width="4" stroke-linecap="round"/>
+      <rect x="32" y="34" width="124" height="72" rx="4" fill="#f5f2eb"/>
+      <g fill="#111">
+        <rect x="42" y="44" width="3" height="52"/><rect x="49" y="44" width="7" height="52"/><rect x="61" y="44" width="3" height="52"/><rect x="69" y="44" width="5" height="52"/><rect x="78" y="44" width="2" height="52"/><rect x="84" y="44" width="8" height="52"/><rect x="97" y="44" width="3" height="52"/><rect x="105" y="44" width="6" height="52"/><rect x="117" y="44" width="3" height="52"/><rect x="126" y="44" width="8" height="52"/><rect x="140" y="44" width="3" height="52"/>
+      </g>
+    </g>
+    <text x="150" y="402" text-anchor="middle" fill="#e4e7e9" font-size="16" font-family="Inter,system-ui,sans-serif">Scan a barcode</text>
+    <line x1="42" y1="446" x2="258" y2="446" stroke="#263746"/>
+    <text x="58" y="482" text-anchor="middle" fill="#cbd2d7" font-size="12" font-family="Inter,system-ui,sans-serif">Collection</text>
+    <text x="150" y="482" text-anchor="middle" fill="#d9a34f" font-size="12" font-family="Inter,system-ui,sans-serif">Scan</text>
+    <text x="242" y="482" text-anchor="middle" fill="#cbd2d7" font-size="12" font-family="Inter,system-ui,sans-serif">Search</text>
+  </g>
+
+  <text x="450" y="1162" text-anchor="middle" fill="#d9a34f" font-size="14" letter-spacing="8" font-family="Inter,system-ui,sans-serif">MUSIC LIVES ON</text>
+</svg>
