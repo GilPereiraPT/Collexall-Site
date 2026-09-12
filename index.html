@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#081019">
+  <meta name="description" content="Collexall — Music Edition is an Android app for cataloguing CDs, vinyl records, music DVDs and Blu-rays, with Discogs integration, statistics, physical locations, loans and CSV round-trip editing.">
+  <meta property="og:title" content="Collexall — Music Edition">
+  <meta property="og:description" content="Catalog your physical music collection.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/collexall-hero.webp">
+  <title>Collexall — Music Edition</title>
+  <link rel="icon" href="assets/collexall-hero.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Collexall home">
+      <span class="brand-mark">◉</span>
+      <span><strong>Collexall</strong><small>Music Edition</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#discogs">Discogs</a>
+      <a href="#csv">CSV</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <span class="eyebrow">Built for physical music collectors</span>
+        <h1>Your collection.<br><span>Beautifully organised.</span></h1>
+        <p class="lead">Catalog CDs, vinyl, music DVDs and Blu-rays. Scan barcodes, search Discogs, track value, locations, favourites and loans — while keeping your collection available offline.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#features">Explore features</a>
+          <a class="button ghost" href="#discogs">See Discogs sync</a>
+        </div>
+        <div class="hero-meta">
+          <span>Android</span><span>Offline-first</span><span>Discogs-powered</span><span>CSV round-trip</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/collexall-hero.webp" alt="Collexall Music Edition with vinyl, CDs, Blu-rays and barcode scanning" width="768" height="1365" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="section-shell intro-strip" aria-label="Supported formats">
+      <div><strong>CD</strong><span>Albums, singles & editions</span></div>
+      <div><strong>Vinyl / LP</strong><span>Pressings & physical copies</span></div>
+      <div><strong>Music DVD</strong><span>Concerts & music releases</span></div>
+      <div><strong>Music Blu-ray</strong><span>High-definition music editions</span></div>
+    </section>
+
+    <section id="features" class="section-shell section-block">
+      <div class="section-heading">
+        <span class="eyebrow">Everything in one collection</span>
+        <h2>Made for the way collectors actually work</h2>
+        <p>Fast when you are cataloguing. Detailed when you want to analyse. Flexible when your collection gets serious.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="icon">⌗</div><h3>Barcode scanning</h3><p>Scan physical releases with your phone camera and identify editions quickly.</p></article>
+        <article class="feature-card"><div class="icon">⌕</div><h3>Manual Discogs search</h3><p>Find older or unusual releases even when a barcode is missing or ambiguous.</p></article>
+        <article class="feature-card"><div class="icon">◎</div><h3>Collection statistics</h3><p>Discover your top artists and bands, countries, decades, formats, labels and favourites.</p></article>
+        <article class="feature-card"><div class="icon">⌂</div><h3>Physical locations</h3><p>Track room, furniture, shelf and position so every item has a real-world home.</p></article>
+        <article class="feature-card"><div class="icon">↔</div><h3>Loans</h3><p>Know what is out, who has it and when it should come back.</p></article>
+        <article class="feature-card"><div class="icon">★</div><h3>Ratings & favourites</h3><p>Mark personal favourites and keep your own rating alongside release metadata.</p></article>
+        <article class="feature-card"><div class="icon">€</div><h3>Collection value</h3><p>See Discogs collection value ranges and keep your own purchase and estimated values.</p></article>
+        <article class="feature-card"><div class="icon">◫</div><h3>Offline-first</h3><p>Your local collection remains useful without a connection; online services are used when needed.</p></article>
+      </div>
+    </section>
+
+    <section id="discogs" class="section-shell section-block split-section">
+      <div class="split-copy">
+        <span class="eyebrow">Discogs integration</span>
+        <h2>Connect your collection, not just a barcode lookup</h2>
+        <p>Collexall is designed to work with Discogs as a collector service: collection sync, Wantlist, folders, ratings and collection value — while keeping your local database independent.</p>
+        <ul class="check-list">
+          <li>Bidirectional collection synchronisation</li>
+          <li>Discogs Wantlist integration</li>
+          <li>Folders and per-copy instance tracking</li>
+          <li>Ratings and collection value</li>
+          <li>API-aware syncing to minimise unnecessary requests</li>
+          <li>Safe handling of remote deletions</li>
+        </ul>
+        <p class="disclaimer">Collexall uses the Discogs API but is not affiliated with, sponsored by, or endorsed by Discogs. Discogs data and trademarks remain the property of their respective owners.</p>
+      </div>
+      <div class="phone-shot">
+        <img src="assets/discogs-screen.png" alt="Collexall Discogs connection and collection value screen" width="691" height="1536" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section-shell section-block collector-panel">
+      <div class="section-heading compact">
+        <span class="eyebrow">Collector intelligence</span>
+        <h2>See the shape of your collection</h2>
+      </div>
+      <div class="stat-demo">
+        <div><span>Top artist / band</span><strong>Your #1</strong></div>
+        <div><span>Top decade</span><strong>1980s</strong></div>
+        <div><span>Top country</span><strong>UK</strong></div>
+        <div><span>Formats</span><strong>CD · LP · DVD · Blu-ray</strong></div>
+      </div>
+      <p class="center-note">Filter by artist or band, decade, country, label, format, condition and favourites. Statistics update with the filtered selection.</p>
+    </section>
+
+    <section id="csv" class="section-shell section-block split-section reverse">
+      <div class="csv-visual" aria-hidden="true">
+        <div class="sheet">
+          <div class="sheet-bar"><span></span><span></span><span></span></div>
+          <div class="sheet-row header"><b>artist</b><b>title</b><b>shelf</b></div>
+          <div class="sheet-row"><span>Massive Attack</span><span>Mezzanine</span><span>A-02</span></div>
+          <div class="sheet-row"><span>Portishead</span><span>Dummy</span><span>A-02</span></div>
+          <div class="sheet-row"><span>Radiohead</span><span>OK Computer</span><span>B-01</span></div>
+          <div class="sheet-row"><span>Pink Floyd</span><span>Animals</span><span>B-03</span></div>
+        </div>
+      </div>
+      <div class="split-copy">
+        <span class="eyebrow">Bulk editing without lock-in</span>
+        <h2>Export. Edit. Import. Update.</h2>
+        <p>Collexall supports CSV round-trip editing. Export your collection, make bulk changes in Excel or LibreOffice, and import the file again.</p>
+        <ul class="check-list">
+          <li>Stable item IDs prevent accidental duplicates</li>
+          <li>Bulk-edit locations, notes, values, tags and more</li>
+          <li>Preview changes before writing them to the database</li>
+          <li>Safe mode ignores empty cells instead of deleting data</li>
+          <li>Exact-sync mode available when you intentionally want blanks to clear values</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-shell section-block privacy-callout">
+      <div>
+        <span class="eyebrow">Your collection remains yours</span>
+        <h2>Local by design</h2>
+        <p>Collexall is built around a local database. Camera access is used for barcode scanning. Discogs requests are made when you choose to search, connect or synchronise. Exported files stay under your control.</p>
+      </div>
+      <div class="legal-links">
+        <a href="privacy.html">Read Privacy Policy <span>→</span></a>
+        <a href="terms.html">Read Terms of Use <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section-shell section-block faq">
+      <div class="section-heading compact"><span class="eyebrow">FAQ</span><h2>Questions collectors ask</h2></div>
+      <details><summary>Does Collexall work without internet?</summary><p>Your local collection, filters, locations, notes and other local features are designed to remain available offline. Discogs search, sync and online metadata require internet access.</p></details>
+      <details><summary>Can I own two copies of the same release?</summary><p>Yes. Collexall tracks individual copies rather than assuming a Discogs Release ID can only exist once.</p></details>
+      <details><summary>Can I bulk-update my shelves or locations?</summary><p>Yes. Export CSV, edit the location columns in a spreadsheet and import the file back. Collexall previews the changes before applying them.</p></details>
+      <details><summary>Is Collexall a Discogs app?</summary><p>No. Collexall is an independent application that can use the Discogs API when you enable Discogs features.</p></details>
+    </section>
+
+    <section class="section-shell final-cta">
+      <span class="eyebrow">Collexall — Music Edition</span>
+      <h2>Music lives on. Your collection should too.</h2>
+      <p>An independent Android collection manager for people who still care about the physical edition.</p>
+      <span class="development-badge">Android app · Active development</span>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div><strong>Collexall — Music Edition</strong><p>Developed and owned by Gil Pereira · Portugal</p></div>
+    <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/GilPereiraPT" rel="me">Developer</a></div>
+    <p class="copyright">© <span id="year">2026</span> Gil Pereira. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
