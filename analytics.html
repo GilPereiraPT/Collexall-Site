@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#081019">
+<title>Collexall Analytics</title><link rel="stylesheet" href="styles.css">
+<style>
+.analytics{padding:54px 0 100px}.analytics-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.analytics-head h1{margin:8px 0 0;font-size:clamp(38px,6vw,64px);line-height:1}.analytics-actions{display:flex;gap:10px;flex-wrap:wrap}.analytics-actions button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:10px 15px;border-radius:12px;cursor:pointer}.analytics-actions button:hover{border-color:var(--gold)}
+.login{max-width:520px;margin:80px auto;padding:30px;border:1px solid var(--line);border-radius:24px;background:var(--panel)}.login input{width:100%;margin:16px 0 12px;padding:13px;border:1px solid var(--line);border-radius:12px;background:#071019;color:var(--text)}.login button{width:100%;padding:13px;border:0;border-radius:12px;background:var(--gold);font-weight:800;cursor:pointer}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.metric,.chart-card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:22px}.metric span{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.metric strong{display:block;margin-top:7px;font-size:30px;color:var(--gold-2)}
+.grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-top:14px}.chart-card h2{margin:0 0 18px;font-size:18px}.bars{display:grid;gap:9px}.bar{display:grid;grid-template-columns:minmax(80px,150px) 1fr auto;gap:10px;align-items:center;font-size:12px}.bar label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}.track{height:9px;background:#071019;border-radius:99px;overflow:hidden}.fill{height:100%;background:var(--gold);border-radius:99px}.list{display:grid;gap:8px}.row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px}.row span{color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.status{margin:16px 0;color:var(--muted);font-size:13px}
+@media(max-width:900px){.metrics{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.analytics-head{align-items:start;flex-direction:column}}@media(max-width:520px){.metrics{grid-template-columns:1fr 1fr}.metric{padding:16px}.metric strong{font-size:24px}}
+</style></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">◉</span><span><strong>Collexall</strong><small>Analytics</small></span></a><nav class="nav"><a href="index.html">Public site</a></nav></header>
+<main class="section-shell analytics">
+<section id="login" class="login"><span class="eyebrow">Private dashboard</span><h1>Collexall Analytics</h1><p>Enter the analytics administration key.</p><input id="token" type="password" autocomplete="current-password" placeholder="Admin key"><button id="loginBtn">Open dashboard</button><p id="loginError" class="status"></p></section>
+<section id="dashboard" hidden>
+<div class="analytics-head"><div><span class="eyebrow">Private dashboard</span><h1>Site Analytics</h1></div><div class="analytics-actions"><button id="refresh">Refresh</button><button id="logout">Log out</button></div></div>
+<div id="status" class="status">Loading…</div>
+<div class="metrics">
+<div class="metric"><span>Today</span><strong id="today">—</strong></div>
+<div class="metric"><span>Last 7 days</span><strong id="d7">—</strong></div>
+<div class="metric"><span>Last 30 days</span><strong id="d30">—</strong></div>
+<div class="metric"><span>Total visits</span><strong id="total">—</strong></div>
+<div class="metric"><span>Unique visitors</span><strong id="unique">—</strong></div>
+</div>
+<div class="grid2"><article class="chart-card"><h2>Visits by day</h2><div id="days" class="bars"></div></article><article class="chart-card"><h2>Top pages</h2><div id="pages" class="list"></div></article></div>
+<div class="grid2"><article class="chart-card"><h2>Referrers</h2><div id="refs" class="list"></div></article><article class="chart-card"><h2>Languages</h2><div id="langs" class="list"></div></article></div>
+<div class="grid2"><article class="chart-card"><h2>Browsers / devices</h2><div id="agents" class="list"></div></article><article class="chart-card"><h2>Recent activity</h2><div id="recent" class="list"></div></article></div>
+</section></main>
+<script>
+const API='https://api.policlinicosdesantoandre.com';
+const $=id=>document.getElementById(id); let token=sessionStorage.getItem('collexall_analytics_key')||'';
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function rows(id,data,label='label',value='count'){ $(id).innerHTML=(data||[]).length?(data||[]).map(x=>'<div class="row"><span title="'+esc(x[label])+'">'+esc(x[label]||'(direct / unknown)')+'</span><strong>'+Number(x[value]||0).toLocaleString()+'</strong></div>').join(''):'<div class="status">No data yet.</div>'; }
+function bars(data){const max=Math.max(1,...(data||[]).map(x=>+x.count));$('days').innerHTML=(data||[]).map(x=>'<div class="bar"><label>'+esc(x.date)+'</label><div class="track"><div class="fill" style="width:'+((+x.count/max)*100)+'%"></div></div><strong>'+x.count+'</strong></div>').join('');}
+async function load(){
+ $('status').textContent='Loading…';
+ try{const r=await fetch(API+'/analytics/dashboard',{headers:{'Authorization':'Bearer '+token}});
+ if(r.status===401||r.status===403)throw new Error('Invalid administration key.');
+ if(!r.ok)throw new Error('API error '+r.status);
+ const d=await r.json(); $('today').textContent=d.summary.today.toLocaleString();$('d7').textContent=d.summary.last_7_days.toLocaleString();$('d30').textContent=d.summary.last_30_days.toLocaleString();$('total').textContent=d.summary.total_visits.toLocaleString();$('unique').textContent=d.summary.unique_visitors.toLocaleString();
+ bars(d.visits_by_day);rows('pages',d.top_pages);rows('refs',d.referrers);rows('langs',d.languages);rows('agents',d.user_agents);
+ $('recent').innerHTML=(d.recent||[]).map(x=>'<div class="row"><span>'+esc(x.created_at)+' · '+esc(x.path)+'</span><strong>'+esc(x.language||'')+'</strong></div>').join('')||'<div class="status">No data yet.</div>';
+ $('status').textContent='Updated '+new Date().toLocaleString();
+ }catch(e){$('status').textContent=e.message;if(/key/i.test(e.message)){sessionStorage.removeItem('collexall_analytics_key');$('dashboard').hidden=true;$('login').hidden=false;$('loginError').textContent=e.message;}}
+}
+function openDash(){token=$('token').value.trim();if(!token)return;$('loginError').textContent='';sessionStorage.setItem('collexall_analytics_key',token);$('login').hidden=true;$('dashboard').hidden=false;load();}
+$('loginBtn').onclick=openDash;$('token').onkeydown=e=>{if(e.key==='Enter')openDash()};$('refresh').onclick=load;$('logout').onclick=()=>{sessionStorage.removeItem('collexall_analytics_key');location.reload()};
+if(token){$('login').hidden=true;$('dashboard').hidden=false;load()}
+</script></body></html>
