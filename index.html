@@ -243,12 +243,41 @@
 
 <footer class="site-footer section-shell">
   <div><strong>Collexall — Music Edition</strong><p>Developed and owned by Gil Pereira · Portugal</p></div>
-  <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/GilPereiraPT" rel="me">Developer</a></div>
+  <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/GilPereiraPT" rel="me">Developer</a><span id="visit-counter" title="Public page visits">👁 — visits</span></div>
   <p class="copyright">© <span id="year">2026</span> Gil Pereira. All rights reserved. · Collexall Music Edition v1.2.2 (25)</p>
 </footer>
 <script>
 document.querySelectorAll('img[data-fallback]').forEach(i=>i.addEventListener('error',()=>{if(i.src.indexOf(i.dataset.fallback)<0)i.src=i.dataset.fallback}));
 document.getElementById('year').textContent=new Date().getFullYear();
+
+(async()=>{
+  const api='https://api.policlinicosdesantoandre.com';
+  const counter=document.getElementById('visit-counter');
+  try{
+    let visitorId=localStorage.getItem('collexall_visitor_id');
+    if(!visitorId){
+      visitorId=(crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2));
+      localStorage.setItem('collexall_visitor_id',visitorId);
+    }
+    await fetch(api+'/analytics/visit',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        visitor_id:visitorId,
+        path:location.pathname,
+        referrer:document.referrer||'',
+        language:navigator.language||''
+      })
+    });
+    const r=await fetch(api+'/analytics/public');
+    if(r.ok){
+      const data=await r.json();
+      counter.textContent='👁 '+Number(data.visits||0).toLocaleString()+' visits';
+    }
+  }catch(e){
+    counter.style.display='none';
+  }
+})();
 </script>
 </body>
 </html>
