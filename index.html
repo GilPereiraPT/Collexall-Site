@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#081019">
-<meta name="description" content="Collexall — Music Edition v1.2.2. Manage CDs, vinyl, music DVDs and Blu-rays with barcode and cover scanning, Discogs sync, Wishlist, valuation, loans, sales, CSV/JSON backups and HTML sale catalogues.">
+<meta name="description" content="Collexall — Music Edition for Android. Catalogue CDs, vinyl and music DVDs/Blu-rays; scan barcodes and covers, sync with Discogs, check eBay asking prices, manage loans and sales, and export to seven marketplace CSV formats.">
 <link rel="canonical" href="https://gilpereirapt.github.io/Collexall-Site/">
-<meta property="og:title" content="Collexall — Music Edition v1.2.2">
+<meta property="og:title" content="Collexall — Music Edition v1.3.7">
 <meta property="og:description" content="Your physical music collection. Organised. Scan, identify, sync, value, lend, sell and back up your collection.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gilpereirapt.github.io/Collexall-Site/">
 <meta property="og:image" content="https://gilpereirapt.github.io/Collexall-Site/assets/collexall-hero.webp">
-<title>Collexall — Music Edition v1.2.2</title>
+<title>Collexall — Music Edition v1.3.7</title>
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -20,7 +20,9 @@
   "name":"Collexall — Music Edition",
   "operatingSystem":"Android",
   "applicationCategory":"LifestyleApplication",
-  "softwareVersion":"1.2.2",
+  "softwareVersion":"1.3.7",
+  "url":"https://gilpereirapt.github.io/Collexall-Site/",
+  "author":{"@type":"Person","name":"Gil Pereira"},
   "description":"Offline-first Android manager for physical music collections including CDs, vinyl records, music DVDs and Blu-rays.",
   "featureList":[
     "Barcode scanning",
@@ -38,7 +40,10 @@
     "CSV export and round-trip import",
     "JSON backup and restore",
     "10 languages",
-    "Offline-first local storage"
+    "Offline-first local storage",
+    "eBay active asking-price comparisons",
+    "Draft CSV exports for eBay, Discogs, Shopify, WooCommerce, PrestaShop, EIL and generic use",
+    "Non-blocking export completeness preview"
   ]
 }
 </script>
@@ -47,8 +52,8 @@
 <header class="site-header">
   <a class="brand" href="#top"><span class="brand-mark">◉</span><span><strong>Collexall</strong><small>Music Edition</small></span></a>
   <nav class="nav">
-    <a href="#latest">v1.2.2</a><a href="#features">Features</a><a href="#discogs">Discogs</a>
-    <a href="#sales">Sales</a><a href="#screens">App</a><a href="#data">Your data</a>
+    <a href="#latest">v1.3.7</a><a href="#features">Features</a><a href="#discogs">Discogs</a>
+    <a href="#sales">Sales</a><a href="#marketplaces">Exports</a><a href="#screens">App</a><a href="#data">Your data</a>
     <a href="#languages">Languages</a><a href="privacy.html">Privacy</a>
   </nav>
 </header>
@@ -59,10 +64,11 @@
     <span class="eyebrow">Built for physical music collectors</span>
     <h1>Your physical music collection.<br><span>Organised.</span></h1>
     <p class="lead">Catalog CDs, vinyl records, music DVDs and Blu-rays. Scan a barcode or a cover, identify the exact Discogs release, organise each physical copy, track loans and value, maintain a Wishlist, prepare items for sale and keep your data portable.</p>
-    <div class="hero-actions"><a class="button primary" href="#screens">See the real app</a><a class="button ghost" href="#features">Explore all features</a></div>
-    <div class="hero-meta"><span>Android</span><span>v1.2.2 · build 25</span><span>Offline-first</span><span>10 languages</span><span>CSV · JSON · HTML</span></div>
+    <div class="hero-actions"><a class="button primary" href="#latest">Explore v1.3.7</a><a class="button ghost" href="#screens">See the real app</a><a class="button ghost" href="#marketplaces">Marketplace exports</a></div>
+    <p class="hero-note">Android · Independently developed in Portugal · Production release availability is subject to Google Play approval.</p>
+    <div class="hero-meta"><span>Android</span><span>v1.3.7 · build 45</span><span>Offline-first</span><span>10 languages</span><span>CSV · JSON · HTML</span></div>
   </div>
-  <div class="hero-media real-shot"><img src="assets/screens/home-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Music Edition v1.2.2 home screen" fetchpriority="high"></div>
+  <div class="hero-media real-shot"><img src="assets/screens/home-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Music Edition v1.3.7 home screen" fetchpriority="high"></div>
 </section>
 
 <section class="section-shell intro-strip">
@@ -74,18 +80,18 @@
 
 <section id="latest" class="section-shell section-block data-panel">
   <div>
-    <span class="eyebrow">Current release · v1.2.2 · build 25</span>
+    <span class="eyebrow">Current release · v1.3.7 · build 45</span>
     <h2>A complete workflow for the collection you actually own.</h2>
-    <p>Collexall combines fast capture, detailed copy management and Discogs integration with practical tools for locations, loans, Wishlist, valuation, sales and independent backups. Version 1.2.2 also completes the Android save-file workflow for CSV, JSON and the sale catalogue.</p>
-    <span class="development-badge">Collexall — Music Edition v1.2.2 (25)</span>
+    <p>Collexall combines fast capture, detailed copy management and Discogs integration with practical tools for locations, loans, Wishlist, valuation, sales and independent backups. Version 1.3.7 improves draft exports for seven destinations, including a new non-blocking completeness summary, cleaner descriptions and normalized barcodes. Android file saving, the collection workflow and Discogs integration remain available.</p>
+    <span class="development-badge">Collexall — Music Edition v1.3.7 (45)</span>
   </div>
   <ul class="check-list">
-    <li>Remove individual or multiple items from sale again</li>
-    <li>Available and sold lists refresh immediately</li>
-    <li>Choose where CSV and JSON files are saved</li>
-    <li>Explicit confirmation after successful saves</li>
-    <li>Standalone HTML sale catalogue with cover images</li>
-    <li>Current Discogs valuation and Wishlist tools</li>
+    <li>Seven draft CSV destinations: eBay, Discogs, Shopify, WooCommerce, PrestaShop, EIL and generic</li>
+    <li>Export preview flags missing prices, media/sleeve condition and barcodes</li>
+    <li>Missing data stays blank — no invented prices or grades</li>
+    <li>Cleaner HTML descriptions and normalized barcode fields</li>
+    <li>Choose where CSV, JSON and HTML files are saved</li>
+    <li>Discogs valuation, Wishlist and eBay active-listing price comparisons</li>
   </ul>
 </section>
 
@@ -107,10 +113,12 @@
     <article class="feature-card"><div class="icon">★</div><h3>Ratings & favourites</h3><p>Keep personal ratings, favourites, notes, purchase information and conditions beside the release metadata.</p></article>
     <article class="feature-card"><div class="icon">♡</div><h3>Discogs Wishlist</h3><p>See wanted releases inside Collexall and refresh the Discogs Wantlist when the Wishlist is opened.</p></article>
     <article class="feature-card"><div class="icon">€</div><h3>Collection value</h3><p>See cached Discogs minimum, median and maximum values and refresh them directly from the app.</p></article>
+    <article class="feature-card"><div class="icon">↗</div><h3>eBay price comparisons</h3><p>Explore active asking prices for comparable listings. They are market indications, not confirmed sold prices or guaranteed valuations.</p></article>
     <article class="feature-card"><div class="icon">⇄</div><h3>Smart Sync</h3><p>Synchronise with Discogs while preserving local per-copy information and avoiding unnecessary API writes.</p></article>
     <article class="feature-card"><div class="icon">¤</div><h3>For Sale</h3><p>Mark one or many copies for sale, set asking price and conditions, and remove them from sale whenever needed.</p></article>
     <article class="feature-card"><div class="icon">✓</div><h3>Sold history</h3><p>Keep the final sale price and date so sold copies remain part of the collection history.</p></article>
     <article class="feature-card"><div class="icon">▤</div><h3>HTML sale catalogue</h3><p>Generate a responsive catalogue of available items with covers, prices, search and format / condition filters.</p></article>
+    <article class="feature-card"><div class="icon">⇥</div><h3>Seven sales CSV exports</h3><p>Prepare marketplace-specific drafts for eBay, Discogs, Shopify, WooCommerce, PrestaShop, EIL and a portable generic CSV.</p></article>
     <article class="feature-card"><div class="icon">▦</div><h3>CSV bulk editor</h3><p>Export to a spreadsheet, edit fields in bulk and import again using stable IDs to update the correct copies.</p></article>
     <article class="feature-card"><div class="icon">⤓</div><h3>JSON backup & restore</h3><p>Save a complete portable backup of the local collection and restore it when required.</p></article>
     <article class="feature-card"><div class="icon">⌾</div><h3>Offline-first</h3><p>Your collection remains useful locally. Internet access is used only when online searches, sync or remote information are needed.</p></article>
@@ -139,7 +147,7 @@
 
 <section id="sales" class="section-shell section-block data-panel">
   <div>
-    <span class="eyebrow">Sales workflow · v1.2.2</span>
+    <span class="eyebrow">Sales workflow · v1.3.7</span>
     <h2>From collection database to sale catalogue.</h2>
     <p>Select the copies you want to sell without maintaining a second catalogue. Collexall keeps sale status on the physical copy, supports batch actions, sold history and a clean standalone HTML export.</p>
   </div>
@@ -153,17 +161,52 @@
     <li>Responsive HTML with search and filters</li>
     <li>Cover images embedded whenever available</li>
     <li>Choose where the HTML file is saved on Android</li>
+    <li>Compare active eBay asking prices before choosing your own price</li>
+    <li>Prepare platform-specific CSV drafts without publishing automatically</li>
   </ul>
+</section>
+
+<section id="marketplaces" class="section-shell section-block marketplace-section">
+  <div class="section-heading">
+    <span class="eyebrow">New in v1.3.7 · selling tools</span>
+    <h2>One collection. Seven ways to prepare a sale.</h2>
+    <p>Choose the physical copies already marked For Sale, then prepare a destination-specific CSV draft. Collexall keeps your own data in control: it does not publish listings automatically or invent missing values.</p>
+  </div>
+  <div class="marketplace-grid">
+    <article><span class="marketplace-monogram">e</span><h3>eBay</h3><p>Draft listing data, SKU, title, category and optional condition ID, asking price and cover URL.</p></article>
+    <article><span class="marketplace-monogram">D</span><h3>Discogs</h3><p>Music-specific fields, release details, media and sleeve grades, asking price and external reference.</p></article>
+    <article><span class="marketplace-monogram">S</span><h3>Shopify</h3><p>Draft products, HTML descriptions, barcodes, inventory and product image links.</p></article>
+    <article><span class="marketplace-monogram">W</span><h3>WooCommerce</h3><p>Draft products with stable SKUs, prices, categories, stock and cover links.</p></article>
+    <article><span class="marketplace-monogram">P</span><h3>PrestaShop</h3><p>Inactive draft rows, EAN/UPC fields, descriptions and categories for merchant review.</p></article>
+    <article><span class="marketplace-monogram">E</span><h3>EIL / Esprit</h3><p>A structured list for a specialist music buyer, with edition details and requested prices.</p></article>
+    <article><span class="marketplace-monogram">CSV</span><h3>Generic CSV</h3><p>Portable item-level data, Discogs release IDs, locations, notes and image URLs.</p></article>
+  </div>
+  <div class="export-preview">
+    <div>
+      <span class="eyebrow">Before you export</span>
+      <h3>A clearer draft, without extra admin.</h3>
+      <p>A summary counts items and highlights missing asking prices, media or sleeve conditions and barcodes. Continue anyway: incomplete records remain editable drafts, not fabricated listings.</p>
+      <p class="export-caution">CSV formats are preparation tools. Importers can require additional mandatory fields or mappings. Review platform requirements, category/condition codes and tax treatment before importing or publishing. PrestaShop’s tax-exclusive price field especially requires merchant verification.</p>
+    </div>
+    <div class="preview-card" aria-label="Illustrative export completeness summary">
+      <span class="preview-label">EXPORT SUMMARY · EXAMPLE</span>
+      <strong>7 <small>items for sale</small></strong>
+      <div><span>Missing asking price</span><b>1</b></div>
+      <div><span>Missing media condition</span><b>7</b></div>
+      <div><span>Missing sleeve condition</span><b>7</b></div>
+      <p>Illustrative example, not your live collection.</p>
+    </div>
+  </div>
 </section>
 
 <section id="screens" class="section-shell section-block">
   <div class="section-heading">
-    <span class="eyebrow">The real app · v1.2.2</span>
+    <span class="eyebrow">Real app screenshots · previous build</span>
     <h2>Current screens. No mockups.</h2>
-    <p>These screenshots come from the current Android build and show the workflows collectors use most.</p>
+    <p>Genuine screenshots of earlier Collexall builds illustrate the collection workflows. The new export preview is described above; it is not presented as a screenshot.</p>
   </div>
   <div class="screen-gallery">
-    <figure><img src="assets/screens/home-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall v1.2.2 home screen" loading="lazy"><figcaption><strong>Collection at a glance</strong><span>Items, artists, sync status, shortcuts and recently added releases.</span></figcaption></figure>
+    <figure><img src="assets/screens/home-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Android home screen from an earlier build" loading="lazy"><figcaption><strong>Collection at a glance</strong><span>Items, artists, sync status, shortcuts and recently added releases.</span></figcaption></figure>
     <figure><img src="assets/screens/add-music-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall add music and scanning options" loading="lazy"><figcaption><strong>Choose how to add music</strong><span>Discogs scan, offline batch scan, Smart Cover Scan and manual search.</span></figcaption></figure>
     <figure><img src="assets/screens/collection.webp" data-fallback="assets/collexall-hero.webp" alt="Collexall collection statistics search and filters" loading="lazy"><figcaption><strong>Know your collection</strong><span>Statistics, search and filters help turn a long list into a useful collection database.</span></figcaption></figure>
     <figure><img src="assets/screens/wishlist-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Wishlist connected to Discogs" loading="lazy"><figcaption><strong>Wishlist in sync</strong><span>Wanted releases stay close to the collection and can link directly back to Discogs.</span></figcaption></figure>
@@ -189,6 +232,8 @@
     <li>Exact-sync mode can intentionally clear values</li>
     <li>JSON backup for full local recovery</li>
     <li>Independent HTML export for available sale items</li>
+    <li>Seven draft marketplace CSV exports with a non-blocking completeness summary</li>
+    <li>Normalized barcode fields and HTML descriptions where appropriate</li>
   </ul>
 </section>
 
@@ -229,22 +274,23 @@
 </section>
 
 <section class="section-shell section-block privacy-callout">
-  <div><span class="eyebrow">Your collection remains yours</span><h2>Local by design.</h2><p>Collection data is stored locally. Smart Cover Scan performs text recognition on-device; online services are used when you choose to search or synchronise with Discogs or retrieve remote information. Exported files remain under your control.</p></div>
+  <div><span class="eyebrow">Your collection remains yours</span><h2>Local by design.</h2><p>Collection data is stored locally. Cover identification can process images on-device; online services are used for Discogs searches and sync, eBay price comparisons or other remote information. Exported files remain under your control.</p></div>
   <div class="legal-links"><a href="privacy.html">Privacy Policy <span>→</span></a><a href="terms.html">Terms of Use <span>→</span></a></div>
 </section>
 
 <section class="section-shell final-cta">
   <span class="eyebrow">Collexall — Music Edition</span>
   <h2>Music lives on. Your collection should too.</h2>
-  <p>An independent Android collection manager for people who care about the physical edition — what they own, where it is, what it is worth and what happened to each copy.</p>
-  <span class="development-badge">Current version · v1.2.2 · build 25</span>
+  <p>An independent Android collection manager for people who care about the physical edition — what they own, where it is, its market indications and what happened to each copy.</p>
+  <div class="hero-actions centered"><a class="button primary" href="#marketplaces">Explore the new exports</a><a class="button ghost" href="#screens">View app screenshots</a></div>
+  <span class="development-badge">Current version · v1.3.7 · build 45</span>
 </section>
 </main>
 
 <footer class="site-footer section-shell">
   <div><strong>Collexall — Music Edition</strong><p>Developed and owned by Gil Pereira · Portugal</p></div>
   <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/GilPereiraPT" rel="me">Developer</a><span id="visit-counter" title="Public page visits">👁 — visits</span></div>
-  <p class="copyright">© <span id="year">2026</span> Gil Pereira. All rights reserved. · Collexall Music Edition v1.2.2 (25)</p>
+  <p class="copyright">© <span id="year">2026</span> Gil Pereira. All rights reserved. · Collexall Music Edition v1.3.7 (45)</p>
 </footer>
 <script>
 document.querySelectorAll('img[data-fallback]').forEach(i=>i.addEventListener('error',()=>{if(i.src.indexOf(i.dataset.fallback)<0)i.src=i.dataset.fallback}));
