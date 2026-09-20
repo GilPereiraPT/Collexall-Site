@@ -4,7 +4,7 @@ Official public website for **Collexall — Music Edition**, an Android applicat
 
 ## Current app version
 
-**Collexall — Music Edition v1.2.1 (build 24)**
+**Collexall — Music Edition v1.3.7 (build 45)**
 
 The site is static and designed for GitHub Pages.
 
@@ -25,6 +25,9 @@ The site is static and designed for GitHub Pages.
 - Publish-ready responsive HTML catalogue export for available items
 - CSV export / edit / import workflow
 - JSON backup and restore
+- Draft CSV exports for eBay, Discogs, Shopify, WooCommerce, PrestaShop, EIL and generic use
+- Non-blocking completeness preview for draft exports
+- Active eBay asking-price comparisons (not sold-price history)
 - 10 localized languages
 - Privacy Policy and Terms of Use
 
