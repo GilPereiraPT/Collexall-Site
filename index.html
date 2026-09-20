@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#081019">
-<meta name="description" content="Collexall — Music Edition for Android. Catalogue CDs, vinyl and music DVDs/Blu-rays; scan barcodes and covers, sync with Discogs, check eBay asking prices, manage loans and sales, and export to seven marketplace CSV formats.">
+<meta name="description" content="Collexall — Music Edition for Android. Catalogue CDs, vinyl and music DVDs/Blu-rays. Identify editions, organise every copy, manage loans and sales, explore market prices and keep your collection portable.">
 <link rel="canonical" href="https://gilpereirapt.github.io/Collexall-Site/">
 <meta property="og:title" content="Collexall — Music Edition v1.3.7">
 <meta property="og:description" content="Your physical music collection. Organised. Scan, identify, sync, value, lend, sell and back up your collection.">
@@ -28,13 +28,13 @@
     "Barcode scanning",
     "Offline batch scanning",
     "On-device Smart Cover Scan",
-    "Manual Discogs search",
+    "Manual music release search",
     "Bidirectional Discogs synchronisation",
-    "Discogs Wishlist",
+    "Wishlist management",
     "Collection statistics",
     "Physical location tracking",
     "Loans management",
-    "Minimum median and maximum Discogs valuation",
+    "Collection value ranges",
     "For-sale management and sold history",
     "Responsive HTML sales catalogue with cover images",
     "CSV export and round-trip import",
@@ -52,7 +52,7 @@
 <header class="site-header">
   <a class="brand" href="#top"><span class="brand-mark">◉</span><span><strong>Collexall</strong><small>Music Edition</small></span></a>
   <nav class="nav">
-    <a href="#latest">v1.3.7</a><a href="#features">Features</a><a href="#discogs">Discogs</a>
+    <a href="#latest">v1.3.7</a><a href="#features">Features</a><a href="#discogs">Sync &amp; value</a>
     <a href="#sales">Sales</a><a href="#marketplaces">Exports</a><a href="#screens">App</a><a href="#data">Your data</a>
     <a href="#languages">Languages</a><a href="privacy.html">Privacy</a>
   </nav>
@@ -63,7 +63,7 @@
   <div class="hero-copy">
     <span class="eyebrow">Built for physical music collectors</span>
     <h1>Your physical music collection.<br><span>Organised.</span></h1>
-    <p class="lead">Catalog CDs, vinyl records, music DVDs and Blu-rays. Scan a barcode or a cover, identify the exact Discogs release, organise each physical copy, track loans and value, maintain a Wishlist, prepare items for sale and keep your data portable.</p>
+    <p class="lead">Give every CD, vinyl record, music DVD and Blu-ray its place. Recognise editions, organise your shelves, track loans, explore collection value and prepare items for sale — all in one personal music library.</p>
     <div class="hero-actions"><a class="button primary" href="#latest">Explore v1.3.7</a><a class="button ghost" href="#screens">See the real app</a><a class="button ghost" href="#marketplaces">Marketplace exports</a></div>
     <p class="hero-note">Android · Independently developed in Portugal · Production release availability is subject to Google Play approval.</p>
     <div class="hero-meta"><span>Android</span><span>v1.3.7 · build 45</span><span>Offline-first</span><span>10 languages</span><span>CSV · JSON · HTML</span></div>
@@ -82,7 +82,7 @@
   <div>
     <span class="eyebrow">Current release · v1.3.7 · build 45</span>
     <h2>A complete workflow for the collection you actually own.</h2>
-    <p>Collexall combines fast capture, detailed copy management and Discogs integration with practical tools for locations, loans, Wishlist, valuation, sales and independent backups. Version 1.3.7 improves draft exports for seven destinations, including a new non-blocking completeness summary, cleaner descriptions and normalized barcodes. Android file saving, the collection workflow and Discogs integration remain available.</p>
+    <p>Collexall brings your physical music collection together: quick identification, individual copy details, shelf locations, loans, wishlists, market insights, sales and independent backups. Version 1.3.7 improves draft exports for seven destinations, including a new non-blocking completeness summary, cleaner descriptions and normalized barcodes. Your established collection workflows remain available.</p>
     <span class="development-badge">Collexall — Music Edition v1.3.7 (45)</span>
   </div>
   <ul class="check-list">
@@ -91,53 +91,53 @@
     <li>Missing data stays blank — no invented prices or grades</li>
     <li>Cleaner HTML descriptions and normalized barcode fields</li>
     <li>Choose where CSV, JSON and HTML files are saved</li>
-    <li>Discogs valuation, Wishlist and eBay active-listing price comparisons</li>
+    <li>Collection value ranges, wishlist and active-market asking-price comparisons</li>
   </ul>
 </section>
 
 <section id="features" class="section-shell section-block">
   <div class="section-heading">
-    <span class="eyebrow">More than a barcode scanner</span>
+    <span class="eyebrow">Made for music collectors</span>
     <h2>Everything around the physical copy.</h2>
-    <p>Capture faster, keep better records and stay in control of the collection from the first scan to a loan, a sale or a backup.</p>
+    <p>From a first album to thousands of editions, keep the music, memories and practical details together.</p>
   </div>
   <div class="feature-grid">
-    <article class="feature-card"><div class="icon">⌗</div><h3>Scan with Discogs</h3><p>Use the phone camera to read EAN and UPC barcodes, search Discogs and confirm the exact release immediately.</p></article>
-    <article class="feature-card"><div class="icon">≡</div><h3>Offline batch scan</h3><p>Capture many barcodes quickly without internet or API requests, then resolve the pending batch later.</p></article>
-    <article class="feature-card"><div class="icon">▣</div><h3>Smart Cover Scan</h3><p>Photograph a cover or choose an image. Text is recognised locally on the device and used to search Discogs.</p></article>
-    <article class="feature-card"><div class="icon">⌕</div><h3>Manual Discogs search</h3><p>Search by artist, album or release details when a barcode or cover is not enough.</p></article>
-    <article class="feature-card"><div class="icon">◎</div><h3>Collection statistics</h3><p>Explore artists and bands, decades, countries, formats, labels, favourites and other useful collection breakdowns.</p></article>
-    <article class="feature-card"><div class="icon">⌁</div><h3>Search, filter & sort</h3><p>Browse the whole collection or narrow it by artist, title, year, country, label, format and collection status.</p></article>
-    <article class="feature-card"><div class="icon">⌂</div><h3>Physical locations</h3><p>Store room, furniture, shelf and position so you always know where each copy is physically located.</p></article>
-    <article class="feature-card"><div class="icon">↔</div><h3>Loans</h3><p>Record the borrower, loan date and expected return date, then close the loan when the item comes back.</p></article>
-    <article class="feature-card"><div class="icon">★</div><h3>Ratings & favourites</h3><p>Keep personal ratings, favourites, notes, purchase information and conditions beside the release metadata.</p></article>
-    <article class="feature-card"><div class="icon">♡</div><h3>Discogs Wishlist</h3><p>See wanted releases inside Collexall and refresh the Discogs Wantlist when the Wishlist is opened.</p></article>
-    <article class="feature-card"><div class="icon">€</div><h3>Collection value</h3><p>See cached Discogs minimum, median and maximum values and refresh them directly from the app.</p></article>
-    <article class="feature-card"><div class="icon">↗</div><h3>eBay price comparisons</h3><p>Explore active asking prices for comparable listings. They are market indications, not confirmed sold prices or guaranteed valuations.</p></article>
-    <article class="feature-card"><div class="icon">⇄</div><h3>Smart Sync</h3><p>Synchronise with Discogs while preserving local per-copy information and avoiding unnecessary API writes.</p></article>
-    <article class="feature-card"><div class="icon">¤</div><h3>For Sale</h3><p>Mark one or many copies for sale, set asking price and conditions, and remove them from sale whenever needed.</p></article>
-    <article class="feature-card"><div class="icon">✓</div><h3>Sold history</h3><p>Keep the final sale price and date so sold copies remain part of the collection history.</p></article>
-    <article class="feature-card"><div class="icon">▤</div><h3>HTML sale catalogue</h3><p>Generate a responsive catalogue of available items with covers, prices, search and format / condition filters.</p></article>
-    <article class="feature-card"><div class="icon">⇥</div><h3>Seven sales CSV exports</h3><p>Prepare marketplace-specific drafts for eBay, Discogs, Shopify, WooCommerce, PrestaShop, EIL and a portable generic CSV.</p></article>
-    <article class="feature-card"><div class="icon">▦</div><h3>CSV bulk editor</h3><p>Export to a spreadsheet, edit fields in bulk and import again using stable IDs to update the correct copies.</p></article>
-    <article class="feature-card"><div class="icon">⤓</div><h3>JSON backup & restore</h3><p>Save a complete portable backup of the local collection and restore it when required.</p></article>
-    <article class="feature-card"><div class="icon">⌾</div><h3>Offline-first</h3><p>Your collection remains useful locally. Internet access is used only when online searches, sync or remote information are needed.</p></article>
+    <article class="feature-card"><div class="icon">⌗</div><h3>Instant barcode identification</h3><p>Find the right edition faster and turn a shelf of music into an organised collection.</p></article>
+    <article class="feature-card"><div class="icon">≡</div><h3>Scan a whole shelf</h3><p>Make cataloguing large collections quicker, even when you are offline.</p></article>
+    <article class="feature-card"><div class="icon">▣</div><h3>Recognise album covers</h3><p>Identify music visually when the barcode is missing, damaged or hard to reach.</p></article>
+    <article class="feature-card"><div class="icon">⌕</div><h3>Find any edition</h3><p>Explore artists, titles and release details to find the copy that matches yours.</p></article>
+    <article class="feature-card"><div class="icon">◎</div><h3>Discover your collection's story</h3><p>See the artists, decades, countries and formats that define your music library.</p></article>
+    <article class="feature-card"><div class="icon">⌁</div><h3>Find any record, fast</h3><p>Navigate even a large collection with confidence.</p></article>
+    <article class="feature-card"><div class="icon">⌂</div><h3>Know exactly where it is</h3><p>Never lose an album among your shelves again.</p></article>
+    <article class="feature-card"><div class="icon">↔</div><h3>Keep track of borrowed music</h3><p>Know who has each item and when you expect it back.</p></article>
+    <article class="feature-card"><div class="icon">★</div><h3>Make the collection yours</h3><p>Keep favourites, ratings, memories and condition details close to the music.</p></article>
+    <article class="feature-card"><div class="icon">♡</div><h3>Your music wishlist</h3><p>Keep the editions you are still hunting for alongside the records you already own.</p></article>
+    <article class="feature-card"><div class="icon">€</div><h3>Understand your collection's value</h3><p>Explore minimum, median and maximum price indications across your collection.</p></article>
+    <article class="feature-card"><div class="icon">↗</div><h3>Explore market asking prices</h3><p>Compare active listings to help inform your own asking price, without confusing them with completed sales.</p></article>
+    <article class="feature-card"><div class="icon">⇄</div><h3>Keep collections in sync</h3><p>Connect your music library across services while retaining the details of your own physical copies.</p></article>
+    <article class="feature-card"><div class="icon">¤</div><h3>Ready when you want to sell</h3><p>Turn selected copies into a manageable sales collection without losing their history.</p></article>
+    <article class="feature-card"><div class="icon">✓</div><h3>Remember every sale</h3><p>Keep a clear record of what left your shelves and for how much.</p></article>
+    <article class="feature-card"><div class="icon">▤</div><h3>Your own sale catalogue</h3><p>Present available music in an attractive, shareable catalogue with covers.</p></article>
+    <article class="feature-card"><div class="icon">⇥</div><h3>Sell beyond one platform</h3><p>Prepare sales drafts for seven destinations without rebuilding your catalogue each time.</p></article>
+    <article class="feature-card"><div class="icon">▦</div><h3>Update hundreds of items faster</h3><p>Make large collection edits in a spreadsheet without losing track of individual copies.</p></article>
+    <article class="feature-card"><div class="icon">⤓</div><h3>Keep your collection safe</h3><p>Take a portable backup and restore your music library when you need it.</p></article>
+    <article class="feature-card"><div class="icon">⌾</div><h3>Your library, always close</h3><p>Browse and manage your locally stored collection even without an internet connection.</p></article>
   </div>
 </section>
 
 <section id="discogs" class="section-shell section-block split-section">
   <div class="split-copy">
-    <span class="eyebrow">Discogs integration</span>
-    <h2>Identify precisely. Synchronise intelligently.</h2>
-    <p>Collexall connects to a Discogs account while keeping its own local collection database. The integration is designed for exact releases and individual physical copies rather than generic album records.</p>
+    <span class="eyebrow">Connected when you want it</span>
+    <h2>Your collection, connected. Your details, preserved.</h2>
+    <p>Enjoy the benefits of a connected music catalogue without losing what makes your collection personal: exact editions, individual copies, shelf locations and notes. Discogs is an optional integration; your local collection remains the heart of Collexall.</p>
     <ul class="check-list">
-      <li>Discogs account authorisation</li>
-      <li>Bidirectional collection synchronisation</li>
+      <li>Optional account connection</li>
+      <li>Two-way collection synchronisation</li>
       <li>Exact-release selection after scan or search</li>
       <li>Folders and per-copy instance tracking</li>
       <li>Wishlist / Wantlist integration</li>
       <li>Minimum, median and maximum valuation</li>
-      <li>Ratings and API request usage</li>
+      <li>Personal ratings and transparent online usage</li>
       <li>Remote deletions protected by confirmation</li>
     </ul>
     <p class="disclaimer">Collexall uses the Discogs API but is not affiliated with, sponsored by, or endorsed by Discogs. Data provided by Discogs remains subject to Discogs terms.</p>
@@ -207,10 +207,10 @@
   </div>
   <div class="screen-gallery">
     <figure><img src="assets/screens/home-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Android home screen from an earlier build" loading="lazy"><figcaption><strong>Collection at a glance</strong><span>Items, artists, sync status, shortcuts and recently added releases.</span></figcaption></figure>
-    <figure><img src="assets/screens/add-music-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall add music and scanning options" loading="lazy"><figcaption><strong>Choose how to add music</strong><span>Discogs scan, offline batch scan, Smart Cover Scan and manual search.</span></figcaption></figure>
+    <figure><img src="assets/screens/add-music-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall add music and scanning options" loading="lazy"><figcaption><strong>Choose how to add music</strong><span>Barcode, batch and cover identification, plus manual music search.</span></figcaption></figure>
     <figure><img src="assets/screens/collection.webp" data-fallback="assets/collexall-hero.webp" alt="Collexall collection statistics search and filters" loading="lazy"><figcaption><strong>Know your collection</strong><span>Statistics, search and filters help turn a long list into a useful collection database.</span></figcaption></figure>
-    <figure><img src="assets/screens/wishlist-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Wishlist connected to Discogs" loading="lazy"><figcaption><strong>Wishlist in sync</strong><span>Wanted releases stay close to the collection and can link directly back to Discogs.</span></figcaption></figure>
-    <figure><img src="assets/screens/discogs-value-v122.webp" data-fallback="assets/screens/discogs.webp" alt="Discogs collection value in Collexall" loading="lazy"><figcaption><strong>Know the value range</strong><span>Minimum, median and maximum Discogs estimates with a direct refresh.</span></figcaption></figure>
+    <figure><img src="assets/screens/wishlist-v122.webp" data-fallback="assets/screens/home.webp" alt="Collexall Wishlist connected to Discogs" loading="lazy"><figcaption><strong>Keep your wishlist close</strong><span>Track the editions you want beside the collection you own.</span></figcaption></figure>
+    <figure><img src="assets/screens/discogs-value-v122.webp" data-fallback="assets/screens/discogs.webp" alt="Discogs collection value in Collexall" loading="lazy"><figcaption><strong>Explore your collection value</strong><span>Minimum, median and maximum price indications in one view.</span></figcaption></figure>
     <figure><img src="assets/screens/sales-v122.webp" data-fallback="assets/screens/details.webp" alt="Collexall For Sale management screen" loading="lazy"><figcaption><strong>Manage items for sale</strong><span>Available and sold views, asking totals, prices and per-copy sale status.</span></figcaption></figure>
   </div>
 </section>
@@ -239,16 +239,16 @@
 
 <section class="section-shell section-block">
   <div class="section-heading">
-    <span class="eyebrow">A collector workflow</span>
-    <h2>From the shelf to Discogs — and back again.</h2>
+    <span class="eyebrow">Made for the way you collect</span>
+    <h2>From your first scan to a collection that grows with you.</h2>
     <p>Collexall keeps the fast parts fast without losing the detail that matters once the collection grows.</p>
   </div>
   <div class="feature-grid">
-    <article class="feature-card"><div class="icon">1</div><h3>Capture</h3><p>Scan a barcode, use Smart Cover Scan or search Discogs manually.</p></article>
+    <article class="feature-card"><div class="icon">1</div><h3>Discover</h3><p>Identify music from a barcode, a cover or a title.</p></article>
     <article class="feature-card"><div class="icon">2</div><h3>Confirm</h3><p>Select the correct release and keep edition-specific metadata.</p></article>
     <article class="feature-card"><div class="icon">3</div><h3>Personalise</h3><p>Add location, condition, notes, rating, purchase data and favourites.</p></article>
     <article class="feature-card"><div class="icon">4</div><h3>Manage</h3><p>Search, filter, analyse, track loans, maintain the Wishlist and prepare sales.</p></article>
-    <article class="feature-card"><div class="icon">5</div><h3>Synchronise</h3><p>Use Discogs Smart Sync when you want local and remote collections aligned.</p></article>
+    <article class="feature-card"><div class="icon">5</div><h3>Connect</h3><p>Keep your music collection aligned across services when it suits you.</p></article>
     <article class="feature-card"><div class="icon">6</div><h3>Keep control</h3><p>Save CSV, JSON and HTML files to a destination you choose.</p></article>
   </div>
 </section>
@@ -257,7 +257,7 @@
   <div class="section-heading">
     <span class="eyebrow">10 languages · localized</span>
     <h2>Use Collexall in your language.</h2>
-    <p>The Android app is localized across the main collection, scanning, Discogs, Wishlist, loans, sales, data, settings and legal workflows.</p>
+    <p>Enjoy the main collection, identification, wishlist, loans, sales, data, settings and legal workflows in your preferred language.</p>
   </div>
   <div class="language-grid-real">
     <article><img src="https://flagcdn.com/w80/pt.png" width="80" height="53" alt="Portugal flag"><div><strong>Português</strong><span>Portugal</span></div></article>
@@ -274,7 +274,7 @@
 </section>
 
 <section class="section-shell section-block privacy-callout">
-  <div><span class="eyebrow">Your collection remains yours</span><h2>Local by design.</h2><p>Collection data is stored locally. Cover identification can process images on-device; online services are used for Discogs searches and sync, eBay price comparisons or other remote information. Exported files remain under your control.</p></div>
+  <div><span class="eyebrow">Your collection remains yours</span><h2>Local by design.</h2><p>Your collection lives locally on your device. Connected features, such as catalogue searches, account sync and market comparisons, use online services when needed. Exported files remain under your control.</p></div>
   <div class="legal-links"><a href="privacy.html">Privacy Policy <span>→</span></a><a href="terms.html">Terms of Use <span>→</span></a></div>
 </section>
 
