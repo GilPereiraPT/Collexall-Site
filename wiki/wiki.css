@@ -42,3 +42,22 @@
   .kb-page .site-header .nav{width:100%;gap:10px}
 }
 @media(prefers-reduced-motion:reduce){.kb-flag{transition:none}.kb-flag:hover{transform:none}}
+
+/* Updated structure: language links now live INSIDE the sticky Wiki header. */
+.kb-page .site-header{display:flex;flex-wrap:wrap;align-items:center;row-gap:8px}
+.kb-page .site-header>.brand{margin-right:auto}
+.kb-page .site-header>.nav{display:flex!important;flex-wrap:wrap;gap:16px;margin-left:auto}
+.kb-page .site-header>.kb-flags-bar{
+  display:flex!important;flex:0 0 100%;flex-direction:row!important;align-items:center;
+  flex-wrap:wrap;justify-content:center;gap:9px 16px;padding:11px 0 2px;margin:0;
+  border-top:1px solid rgba(224,173,89,.25);border-bottom:none;background:transparent
+}
+.kb-page .kb-flags{display:flex!important;flex-flow:row nowrap!important;align-items:center;justify-content:center;gap:8px}
+.kb-page .kb-flags>a.kb-flag{display:inline-flex!important;flex:0 0 47px;width:47px;height:41px}
+.kb-page .kb-flags>a.kb-flag[aria-current="page"]{border:2px solid var(--gold-2)}
+@media(max-width:760px){
+  .kb-page .site-header>.nav{width:100%;justify-content:center;gap:14px}
+  .kb-page .site-header>.kb-flags-bar{flex-direction:column!important;gap:7px;padding-top:8px}
+  .kb-page .kb-flags{display:grid!important;grid-template-columns:repeat(5,42px);gap:6px 10px}
+  .kb-page .kb-flags>a.kb-flag{width:42px;height:37px;flex-basis:42px}
+}
