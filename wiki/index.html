@@ -18,17 +18,57 @@
 <link rel="alternate" hreflang="cs" href="https://gilpereirapt.github.io/Collexall-Site/wiki/cs.html">
 <link rel="alternate" hreflang="x-default" href="https://gilpereirapt.github.io/Collexall-Site/wiki/">
 <title>Knowledge Base — Collexall Music Edition | USB, Camera & Discogs Guides</title>
-<link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="wiki.css">
+<link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="wiki.css?v=sticky-flags-2">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Collexall Knowledge Base","description":"Practical guides for Collexall Music Edition","url":"https://gilpereirapt.github.io/Collexall-Site/wiki/","inLanguage":"en"}</script>
 <script defer src="language-switch.js"></script>
+<style id="kb-critical-flags">
+/* Critical navigation: loaded inline so the flag row works even if a cached
+   Wiki stylesheet is stale or not returned by the browser. */
+.kb-page .site-header{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;column-gap:22px;row-gap:8px}
+.kb-page .site-header>.brand{margin-right:auto}
+.kb-page .site-header>.nav{display:flex!important;align-items:center;flex-wrap:wrap;gap:16px;margin-left:auto}
+.kb-page .site-header>.kb-flags-bar{
+  display:flex!important;flex:0 0 100%;flex-direction:row!important;align-items:center;
+  justify-content:center;flex-wrap:wrap;gap:9px 16px;
+  margin:0;padding:11px 0 2px;background:transparent;
+  border-top:1px solid rgba(224,173,89,.25);border-bottom:0;
+}
+.kb-page .kb-flags-label{color:#f4c777;font:700 12px/1.4 system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+.kb-page .kb-flags{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center;justify-content:center;gap:8px;margin:0;padding:0}
+.kb-page .kb-flags>a.kb-flag{
+  display:inline-flex!important;align-items:center;justify-content:center;
+  box-sizing:border-box;flex:0 0 47px;width:47px;height:41px;
+  border:1px solid rgba(224,173,89,.34);border-radius:10px;
+  background:rgba(224,173,89,.045);text-decoration:none;
+}
+.kb-page .kb-flags>a.kb-flag img{
+  display:block!important;width:36px;height:24px;max-width:none;
+  object-fit:cover;border-radius:2px;
+}
+.kb-page .kb-flags>a.kb-flag[aria-current="page"]{
+  border:2px solid #f4c777;background:rgba(224,173,89,.2);
+  box-shadow:0 0 0 2px rgba(224,173,89,.12);
+}
+.kb-page .kb-flags>a.kb-flag:hover{border-color:#f4c777;transform:translateY(-2px)}
+.kb-page .kb-flags>a.kb-flag:focus-visible{outline:2px solid #f4c777;outline-offset:3px}
+@media(max-width:760px){
+  .kb-page .site-header>.nav{width:100%;justify-content:center;gap:14px}
+  .kb-page .site-header>.kb-flags-bar{flex-direction:column!important;gap:7px;padding-top:8px}
+  .kb-page .kb-flags{display:grid!important;grid-template-columns:repeat(5,42px);gap:6px 10px}
+  .kb-page .kb-flags>a.kb-flag{width:42px;height:37px;flex-basis:42px}
+  .kb-page .kb-flags>a.kb-flag img{width:34px;height:23px}
+}
+@media(prefers-reduced-motion:reduce){.kb-page .kb-flags>a.kb-flag:hover{transform:none}}
+</style>
 </head>
 <body class="kb-page">
 <a href="#main" class="kb-top-link" style="position:absolute;left:-1000px">Skip to guides</a>
 <header class="site-header">
 <a class="brand" href="../"><span class="brand-mark">◉</span><span><strong>Collexall</strong><small>Music Edition</small></span></a>
 <nav class="nav" aria-label="Main navigation"><a href="../">Home</a><a href="#guides">Guides</a><a href="#faq">FAQ</a></nav>
-</header>
 <nav class="kb-flags-bar" aria-label="Language"><span class="kb-flags-label">Language</span><div class="kb-flags"><a href="./" class="kb-flag is-active" lang="en" hreflang="en" title="English" aria-label="English" aria-current="page"><img src="https://flagcdn.com/w80/gb.png" alt="" width="36" height="24"></a><a href="pt.html" class="kb-flag" lang="pt-PT" hreflang="pt-PT" title="Português" aria-label="Português"><img src="https://flagcdn.com/w80/pt.png" alt="" width="36" height="24"></a><a href="es.html" class="kb-flag" lang="es" hreflang="es" title="Español" aria-label="Español"><img src="https://flagcdn.com/w80/es.png" alt="" width="36" height="24"></a><a href="fr.html" class="kb-flag" lang="fr" hreflang="fr" title="Français" aria-label="Français"><img src="https://flagcdn.com/w80/fr.png" alt="" width="36" height="24"></a><a href="de.html" class="kb-flag" lang="de" hreflang="de" title="Deutsch" aria-label="Deutsch"><img src="https://flagcdn.com/w80/de.png" alt="" width="36" height="24"></a><a href="it.html" class="kb-flag" lang="it" hreflang="it" title="Italiano" aria-label="Italiano"><img src="https://flagcdn.com/w80/it.png" alt="" width="36" height="24"></a><a href="nl.html" class="kb-flag" lang="nl" hreflang="nl" title="Nederlands" aria-label="Nederlands"><img src="https://flagcdn.com/w80/nl.png" alt="" width="36" height="24"></a><a href="pl.html" class="kb-flag" lang="pl" hreflang="pl" title="Polski" aria-label="Polski"><img src="https://flagcdn.com/w80/pl.png" alt="" width="36" height="24"></a><a href="sv.html" class="kb-flag" lang="sv" hreflang="sv" title="Svenska" aria-label="Svenska"><img src="https://flagcdn.com/w80/se.png" alt="" width="36" height="24"></a><a href="cs.html" class="kb-flag" lang="cs" hreflang="cs" title="Čeština" aria-label="Čeština"><img src="https://flagcdn.com/w80/cz.png" alt="" width="36" height="24"></a></div></nav>
+</header>
+
 
 <main id="main">
 <section class="section-shell kb-top">
