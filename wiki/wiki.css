@@ -5,3 +5,14 @@
 .kb-page .site-header{flex-wrap:wrap;row-gap:8px}
 .kb-page .site-header .nav{display:flex;flex-wrap:wrap;gap:12px}
 @media(max-width:620px){.kb-page .site-header .nav{font-size:12px;gap:10px}}
+
+/* Independent language picker: only the knowledge base is translated. */
+.kb-page .kb-locale{display:flex;align-items:center;gap:9px;min-width:0;margin-left:5px}
+.kb-page .kb-locale label{font-size:12px;color:var(--gold-2);font-weight:750;white-space:nowrap}
+.kb-page .kb-language-select{min-width:146px;max-width:178px;background:var(--panel-2);color:var(--text);border:1px solid rgba(224,173,89,.6);border-radius:11px;padding:10px 31px 10px 10px;font-size:13px;line-height:1.2;cursor:pointer;outline:none}
+.kb-page .kb-language-select:hover,.kb-page .kb-language-select:focus-visible{border-color:var(--gold-2);box-shadow:0 0 0 3px rgba(224,173,89,.12)}
+.kb-page .kb-search-area>label{display:block;color:var(--muted);margin-bottom:8px}
+.kb-page .site-header .nav{margin-left:auto}
+@media(max-width:980px){.kb-page .site-header .nav{display:flex!important}.kb-page .kb-locale{margin-left:auto}}
+@media(max-width:620px){.kb-page .site-header .nav{width:100%;gap:10px}.kb-page .kb-locale{margin-left:auto}.kb-page .kb-locale label{font-size:11px}.kb-page .kb-language-select{min-width:120px;max-width:143px;font-size:12px;padding:9px 20px 9px 8px}}
+@media(max-width:400px){.kb-page .site-header .nav{font-size:11px;gap:7px}.kb-page .kb-locale{gap:5px}.kb-page .kb-language-select{min-width:110px;max-width:120px}}
