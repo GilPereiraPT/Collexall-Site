@@ -166,3 +166,5 @@ button,input,textarea{font:inherit}
 .mobile-nav .mobile-nav-buy{color:var(--gold-2)}
 }
 @media(max-width:380px){.mobile-buy-link{font-size:11px;padding:9px 8px}.site-header{gap:7px}}
+
+.real-screen-gallery img{aspect-ratio:auto;object-fit:contain}.promo-gallery img{aspect-ratio:9/16;object-fit:contain}.promo-gallery figure:nth-child(2){margin-top:0}
